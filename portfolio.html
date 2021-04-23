@@ -18,8 +18,8 @@
 </head>
 
 <body>
-    <div class="header-container">
-        <header class="container page-header">
+    <div class="container header-container">
+        <header class="page-header">
             <nav class="site-nav">
                 <a class="link logo-text logo" href="index.html">Web<span class="logo-item">Studio</span></a>
                 <ul class="list list-nav">
@@ -28,35 +28,46 @@
                     <li class="menu-item"><a class="link link-accent" href="">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="list list-nav">
-                <li class="contact-item">
-                    <a class="link link-accent link-address" href="mailto:info@devstudio.com">info@devstudio.com </a>
-                </li>
-                <li class="contact-item">
-                    <a class="link link-accent link-address" href="tel:+380961111111"> +38 096 111 11 11</a>
-                </li>
-            </ul>
+            <div class="contacts-head">
+                <ul class="list list-nav">
+                    <li class="contact-item">
+                        <a class="link link-accent link-address" href="mailto:info@devstudio.com">
+                            <svg class="contacts-svg" width="16" height="12">
+                                <use href="./images/icons/sprite.svg#icon-envelope-icon"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a class="link link-accent link-address" href="tel:+380961111111">
+                            <svg class="contacts-svg" width="16" height="12">
+                                <use href="./images/icons/sprite.svg#icon-smartphone-icon"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
         </header>
     </div>
     <main>
         <!-- Секция видов работ -->
-    
-            <section class="section">
-                <div class="container">
+
+        <section class="section">
+            <div class="container">
                 <h1 class="visually-hidden">
                     Виды нашей деятельности
                 </h1>
 
-                    <ul class="list work-types work-nav ">
-                        <li class="work-type-item"><button type="button" class="button-portfolio">Всё</button></li>
-                        <li class="work-type-item"><button type="button" class="button-portfolio">Веб-сайты</button>
-                        </li>
-                        <li class="work-type-item"><button type="button" class="button-portfolio">Приложения</button>
-                        </li>
-                        <li class="work-type-item"><button type="button" class="button-portfolio">Дизайн</button></li>
-                        <li class="work-type-item"><button type="button" class="button-portfolio">Маркетинг</button>
-                        </li>
-                    </ul>
+                <ul class="list work-types work-nav ">
+                    <li class="work-type-item"><button type="button" class="button-portfolio">Всё</button></li>
+                    <li class="work-type-item"><button type="button" class="button-portfolio">Веб-сайты</button>
+                    </li>
+                    <li class="work-type-item"><button type="button" class="button-portfolio">Приложения</button>
+                    </li>
+                    <li class="work-type-item"><button type="button" class="button-portfolio">Дизайн</button></li>
+                    <li class="work-type-item"><button type="button" class="button-portfolio">Маркетинг</button>
+                    </li>
+                </ul>
                 <ul class="list project-list card-set">
                     <li class="item project-item">
                         <img src="./images/projects-photo/img1.jpg" alt="Страница веб-сайта Технокряк" width=370>
@@ -123,9 +134,9 @@
                         </div>
                     </li>
                 </ul>
-                </div>
+            </div>
         </section>
-       
+
     </main>
 
     <footer>
@@ -137,12 +148,14 @@
                     <address>
                         <ul class="list">
                             <li class="adress-in-foot-list">
-                                <a class="link address-in-footer" href="https://goo.gl/maps/eZaEBdZkiq7512ZRA">г. Киев, пр-т
+                                <a class="link address-in-footer" href="https://goo.gl/maps/eZaEBdZkiq7512ZRA">г. Киев,
+                                    пр-т
                                     Леси
                                     Украинки, 26</a>
                             </li>
                             <li class="adress-in-foot-list">
-                                <a class="link address-in-footer-tr" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                <a class="link address-in-footer-tr"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
                             </li>
                             <li class="adress-in-foot-list">
                                 <a class="link address-in-footer-tr" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -185,7 +198,7 @@
                                 </svg>
                             </a>
                         </li>
-    
+                    </ul>
                 </div>
             </div>
         </div>

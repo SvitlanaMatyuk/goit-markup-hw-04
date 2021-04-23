@@ -133,7 +133,15 @@ img {
 .logo-item {
   color: #000000;
 }
-
+.contacts-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts-svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .button-index {
   font-weight: bold;
   font-size: 16px;
@@ -229,6 +237,31 @@ img {
 
 .benefits-item {
   flex-basis: calc((100% - 4 * 30px) / 4);
+}
+.benefits-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  background-color: var(--button-backgr-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  /* outline: 1px solid green; */
+}
+.ben-antenna::before {
+  background-image: url(../images/icons/feture-icons/antenna1.svg);
+}
+.ben-clock::before {
+  background-image: url(../images/icons/feture-icons/clock1.svg);
+}
+.ben-diag::before {
+  background-image: url(../images/icons/feture-icons/diagram1.svg);
+}
+.ben-ast::before {
+  background-image: url(../images/icons/feture-icons/astronaut1.svg);
 }
 .work-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
@@ -393,6 +426,13 @@ img {
   font-size: 16px;
   line-height: 1.87;
 }
+.project-item:hover {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .card {
   padding-right: 24px;
@@ -415,8 +455,6 @@ img {
 }
 .footer-container {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .par-in-footer {
